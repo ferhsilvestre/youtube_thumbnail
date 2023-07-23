@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Thumbnail</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Miniatura do Youtube</title>
 </head>
 <body>
-    <h1>Get Youtube Thumbnail</h1>
-    <input type="url" id="link_video" name="link_video" required>
-    <button onclick="get_thumbnail()">Get it now!</button>
     <div>
-        <img id="img_original" src="">
-        <img id="img_thumb" src="">
+        <div class="bg"></div>
+        <marquee direction="up">
+            <h1>Download de miniatura do Youtube</h1>
+        </marquee>
+        <div class="caixa">
+            <p> Para baixar qualquer miniatura de um vídeo do Youtube basta inserir seu link completo no espaço abaixo!</p>
+            <p> Seu link deve se parecer com isso: </p>
+            <a href="http://www.youtube.com/watch?v=erLk59H86ww"> http://www.youtube.com/watch?v=erLk59H86ww </a> 
+        </div>
+        <p id="aviso"> Atenção: O link deve ser completo como o link exemplificado acima, o gerador não reconhece links reduzidos. </p>
+        <input type="url" id="link_video" name="link_video" required> <br>
+        <button onclick="get_thumbnail()">Baixar agora!</button>
+        <div>
+            <img id="img_original" src="">
+            <img id="img_thumb" src="">
+        </div>
     </div>
     <script>
         function get_thumbnail() {

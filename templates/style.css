@@ -1,0 +1,73 @@
+/* corpo do html */
+* {    
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* estilizando o background */
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(https://img.freepik.com/vetores-premium/plano-de-fundo-do-logotipo-do-youtube_601658-530.jpg?w=740) center center;
+    opacity: .1;
+      width: 100%;
+      height: 100%;
+}
+
+/* estilizando os textos */
+h1 {
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 0.1em 0.1em 0.1em grey;
+}
+
+p, a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#aviso {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    text-shadow: 0.1em 0.1em 0.1em rgb(168, 168, 168);
+}
+
+/* estilizando onde vai o link */
+input {
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.2rem;
+    border-color: black;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    width: 25%;
+    box-shadow: 3px 2px 5px 0px grey;
+}
+
+/* estilizando o botão */
+button {
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.2rem;
+    background-color: white;
+    box-shadow: 3px 2px 5px 0px grey;
+}
+
+button:hover{
+    background-color: green;
+    font-style: italic;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* estilizando a div */
+div.caixa{
+    height:50%;
+    border-radius: 0.2rem;
+    border: 0.8px solid;
+}
